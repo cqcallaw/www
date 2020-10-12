@@ -9,7 +9,7 @@ title = "Borderlands 3 in Proton"
 +++
 
 
-Borderlands 3 recently became available through Steam, and I'm happy to report it plays quite well in Proton with the commonly available Media Foundation work-arounds are installed. My Nvidia GTX 1080 yields a respectible 50 FPS at 2560x1440 with "Badass" quality settings.
+Borderlands 3 recently became available through Steam, and I'm happy to report it plays quite well in Proton with the commonly available Media Foundation work-arounds installed. My Nvidia GTX 1080 yields a respectible 50 FPS at 2560x1440 with "Badass" quality settings.
 
 Out-of-the box, I noticed a lot of choppiness in the framerate which disappears after the first few minutes of gameplay, even with the lowest quality settings. This is consistent with shader cache warmup issues, so I configured a dedicated, peristent shader cache with [Steam launch options](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947):
 
