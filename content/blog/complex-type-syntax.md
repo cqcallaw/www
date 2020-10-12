@@ -4,6 +4,7 @@ date = 2016-04-25T01:23:42Z
 description = ""
 draft = false
 slug = "complex-type-syntax"
+tags = ["newt"]
 title = "New Complex Type Syntax"
 
 +++
@@ -16,7 +17,7 @@ person {
    age:int,
    name {
         first:string,
-        last:string       
+        last:string
    }
 }
 ```

@@ -4,6 +4,7 @@ date = 2017-12-31T05:30:07Z
 description = ""
 draft = false
 slug = "newt"
+tags = ["newt"]
 title = "newt does I/O"
 
 +++
