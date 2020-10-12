@@ -4,6 +4,7 @@ date = 2016-05-15T05:01:00Z
 description = ""
 draft = false
 slug = "clear-ice"
+tags = ["cooking"]
 title = "Clear Ice"
 
 +++

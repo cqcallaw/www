@@ -4,6 +4,7 @@ date = 2020-10-08T06:28:13Z
 description = ""
 draft = false
 slug = "proton-field-guide"
+tags = ["gaming"]
 title = "A Proton Field Guide"
 
 +++
@@ -16,7 +17,7 @@ Valve provides [beta support](https://steamcommunity.com/games/221410/announceme
 
 ![enable-steam-play](/blog/content/images/2020/10/enable-steam-play.png)
 
-Steam downloads the Windows version of a Proton-enabled app, but still stores files in the familiar `~/.steam/steam/steamapps/common/[appname]` directory. On first launch, Proton provisions a Wine prefix (created in `~/.steam/steam/steamapps/compatdata/[appid]` by default) that holds pertinent state data and a basic Windows filesystem in `$WINEPREFIX/pfx/drive_c`. This filesystem is presented to the app as its root Windows filesystem. Save games are usually stored in the prefix as well, making save game import [complicated](https://www.brainvitamins.net/blog/mass-effect-savegame-import/). 
+Steam downloads the Windows version of a Proton-enabled app, but still stores files in the familiar `~/.steam/steam/steamapps/common/[appname]` directory. On first launch, Proton provisions a Wine prefix (created in `~/.steam/steam/steamapps/compatdata/[appid]` by default) that holds pertinent state data and a basic Windows filesystem in `$WINEPREFIX/pfx/drive_c`. This filesystem is presented to the app as its root Windows filesystem. Save games are usually stored in the prefix as well, making save game import [complicated](https://www.brainvitamins.net/blog/mass-effect-savegame-import/).
 
 Windows applications frequently have additional dependencies like the [Visual C++ Runtime Redistributables](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads), and apps may require specific workarounds to run well in Wine environments. Many of these concerns are managed by the app's install script (usually `~/.steam/steam/steamapps/common/[appname]/installscript.vdf`), but `~/.steam/steam/legacycompat/iscriptevaluator.exe` also runs inside the Wine environment during initial provisioning and appears to manage Proton-specific dependencies and tweaks.
 
@@ -99,7 +100,7 @@ $ SteamGameId='gog' STEAM_COMPAT_DATA_PATH=~/Games/GOG/ ~/.steam/steam/compatibi
 8. Launch and enjoy. One can also launch the game though CLI:
 
 ```
-$ SteamGameId='gog' STEAM_COMPAT_DATA_PATH=~/Games/GOG/ ~/.steam/steam/compatibilitytools.d/Proton-5.9-GE-7-ST/proton waitforexitandrun ~/Games/GOG/pfx/drive_c/Program\ Files\ \(x86\)/GOG\ Galaxy/Games/Wasteland\ 3/WL3.exe 
+$ SteamGameId='gog' STEAM_COMPAT_DATA_PATH=~/Games/GOG/ ~/.steam/steam/compatibilitytools.d/Proton-5.9-GE-7-ST/proton waitforexitandrun ~/Games/GOG/pfx/drive_c/Program\ Files\ \(x86\)/GOG\ Galaxy/Games/Wasteland\ 3/WL3.exe
 ```
 
 ![Screenshot-from-2020-10-09-10-39-29](/blog/content/images/2020/10/Screenshot-from-2020-10-09-10-39-29.png)

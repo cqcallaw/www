@@ -4,6 +4,7 @@ date = 2020-08-16T20:05:31Z
 description = ""
 draft = false
 slug = "mass-effect-savegame-import"
+tags = ["gaming"]
 title = "Import Mass Effect Proton Savegame Into Mass Effect 2"
 
 +++

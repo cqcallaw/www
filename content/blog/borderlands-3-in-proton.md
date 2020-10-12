@@ -4,6 +4,7 @@ date = 2020-03-28T19:05:09Z
 description = ""
 draft = false
 slug = "borderlands-3-in-proton"
+tags = ["gaming"]
 title = "Borderlands 3 in Proton"
 
 +++

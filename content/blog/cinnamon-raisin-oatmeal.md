@@ -4,6 +4,7 @@ date = 2020-01-01T10:14:53Z
 description = ""
 draft = false
 slug = "cinnamon-raisin-oatmeal"
+tags = ["cooking"]
 title = "My Favorite Cinnamon Raisin Oatmeal Method"
 
 +++

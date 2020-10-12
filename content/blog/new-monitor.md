@@ -4,6 +4,7 @@ date = 2019-12-01T05:46:35Z
 description = ""
 draft = false
 slug = "new-monitor"
+tags = ["gaming"]
 title = "New Monitor"
 
 +++
