@@ -1,0 +1,4 @@
+baseURL = "https://www.brainvitamins.net/"
+languageCode = "en-us"
+title = "Brain Vitamins"
+theme = "ananke"
