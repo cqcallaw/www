@@ -63,6 +63,10 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "github"
     url = "https://github.com/cqcallaw"
 
+  [[params.social]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/cqcallaw"
+
 [menu]
 
   [[menu.main]]
@@ -74,11 +78,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "Resume"
     url = "resume.pdf"
     weight = 20
-
-  [[menu.main]]
-    name = "Projects"
-    url = "projects/"
-    weight = 30
 
   [[menu.main]]
     name = "About"
