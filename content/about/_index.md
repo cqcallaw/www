@@ -11,7 +11,7 @@ title = "About"
 
 A place on the Internet to brain-dump about various topics, mostly technical; social media doesn't give me as much control over the data as I'd like.
 
-Much can be inferred about the nature of my interests from the information on [home](/) and [project](/projects) pages.
+Much can be inferred about the nature of my interests from the information on the [home](/) and [project](/projects) pages.
 
 **gpg keyid**: 1024D/48C5E8CE
 
