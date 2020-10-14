@@ -1,12 +1,12 @@
-all: resume cweb dweb
+all: cweb dweb
 
 resume: FORCE
 	cd static && pdflatex -aux-directory=/dev/null resume.tex && rm -f resume.aux resume.log
 
-cweb: FORCE
+cweb: resume FORCE
 	hugo --debug -d cweb
 
-dweb: FORCE
+dweb: resume FORCE
 	hugo --debug -d dweb --baseURL 'ipfs://www.brainvitamins.eth/'
 
 clean:
