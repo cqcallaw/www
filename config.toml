@@ -1,4 +1,5 @@
 baseURL = "https://www.brainvitamins.net/"
+relativeURLS=true
 languageCode = "en-us"
 title = "Brain Vitamins"
 defaultContentLanguage = "en"
