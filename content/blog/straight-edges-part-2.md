@@ -9,7 +9,7 @@ title = "Straight Edges Part 2"
 +++
 
 
-I continue to enjoy [shaving with a straigh edge razor](https://www.brainvitamins.net/blog/straight-edges/). A few additional discoveries:
+I continue to enjoy [shaving with a straigh edge razor](/blog/straight-edges/). A few additional discoveries:
 
 * A sharp razor can shave arm hair without lather or discomfort. If the razor pulls on the hair or fails to cut it, it's time to sharpen the razor.
 * Make sure to use the sharpening tools properly (read the instructions). I tend to use too little water on my waterstone; it should be nicely soaked

@@ -11,7 +11,7 @@ title = "Sum Types, continued"
 +++
 
 
-Regarding [yesterday's post about sum types](https://www.brainvitamins.net/blog/sum-types-structural-vs-nominal/), co-conspirator Lao observed that the verbosity of structural sum types could be overcome by allowing structural sum types to be aliased, e.g.:
+Regarding [yesterday's post about sum types](/blog/sum-types-structural-vs-nominal/), co-conspirator Lao observed that the verbosity of structural sum types could be overcome by allowing structural sum types to be aliased, e.g.:
 ```
 sum number {
     int

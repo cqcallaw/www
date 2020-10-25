@@ -10,7 +10,7 @@ title = "Cold Brew Recipes"
 +++
 
 
-This post builds on the basic information in [my previous cold brew post](https://www.brainvitamins.net/blog/cold-brew-at-home-2/) with more recipes and preparation ideas.
+This post builds on the basic information in [my previous cold brew post](/blog/cold-brew-at-home-2/) with more recipes and preparation ideas.
 
 # With Cream and Sugar
 * 2 oz. cold brew concentrate

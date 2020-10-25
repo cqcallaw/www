@@ -21,5 +21,5 @@ Normally distributed data means our 95% confidence interval will be smaller than
 
 Computing the averages of averages is not always statistically sound, so it may seem incorrect to take the average FPS from each iteration of a benchmark and average them together. In this case we can confidently say that each average has [equal weight](https://math.stackexchange.com/questions/95909/why-is-an-average-of-an-average-usually-incorrect/95912#95912); if not, we need a different benchmark!
 
-Next: [Comparing Benchmark Results](https://www.brainvitamins.net/blog/comparing-confidence-intervals/)
+Next: [Comparing Benchmark Results](/blog/comparing-confidence-intervals/)
 

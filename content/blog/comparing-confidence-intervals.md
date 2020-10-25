@@ -9,7 +9,7 @@ title = "Benchmark Confidence Interval Part 2: Comparison"
 +++
 
 
-Benchmark data generally isn't interesting in isolation; once we have one data set, we usually gather a second set of data against which the first is compared. Reporting the second result as a percentage of the first result isn't sufficient if we're rigorous and report results with [confidence intervals](https://www.brainvitamins.net/blog/confidence-intervals-for-benchmarks/); we need a more nuanced approach.
+Benchmark data generally isn't interesting in isolation; once we have one data set, we usually gather a second set of data against which the first is compared. Reporting the second result as a percentage of the first result isn't sufficient if we're rigorous and report results with [confidence intervals](/blog/confidence-intervals-for-benchmarks/); we need a more nuanced approach.
 
 Let's suppose we run a benchmark 5 times and record the results, then fix a performance bug and gather a second set of data to measure the improvement. The best  intuition about performance gains is given by scores and confidence intervals that are [normalized](https://en.wikipedia.org/wiki/Normalization_(statistics)) using our baseline geomean score:
 
