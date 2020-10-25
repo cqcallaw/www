@@ -1,13 +1,13 @@
 all: cweb dweb
 
-resume: FORCE
+static/resume.pdf: static/resume.tex
 	cd static && pdflatex -aux-directory=/dev/null resume.tex && rm -f resume.aux resume.log
 
-cweb: resume FORCE
-	hugo --debug -d cweb
+cweb: config.toml static/resume.pdf
+	hugo -d cweb
 
-dweb: resume FORCE
-	hugo --debug -d dweb --baseURL '/'
+dweb: config.toml static/resume.pdf
+	hugo -d dweb --baseURL '/'
 	ipfs add -r dweb
 
 clean:
