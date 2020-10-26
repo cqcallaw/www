@@ -1,4 +1,4 @@
-FILES := config.toml $(shell find archetypes content layouts static themes) static/resume.pdf
+FILES := config.toml $(shell find archetypes content layouts static themes)
 
 all: hugo ipfs
 
