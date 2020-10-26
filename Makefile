@@ -1,11 +1,7 @@
 FILES := config.toml $(shell find archetypes content layouts static themes)
 
-all: hugo ipfs
-
-hugo: $(FILES) static/resume.pdf
+public: $(FILES) static/resume.pdf
 	hugo --noTimes
-
-ipfs: hugo
 	ipfs add -r public
 
 static/resume.pdf: static/resume.tex
