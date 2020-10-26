@@ -1,4 +1,4 @@
-baseURL = "https://www.brainvitamins.net/"
+baseURL = "/"
 relativeURLS=true
 languageCode = "en-us"
 title = "Brain Vitamins"
