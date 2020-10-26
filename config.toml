@@ -1,61 +1,36 @@
-baseURL = "/"
-relativeURLS=true
-languageCode = "en-us"
-title = "Brain Vitamins"
-defaultContentLanguage = "en"
-theme = "hermit"
-enableGitInfo = false
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
-rssLimit = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
-enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
-# googleAnalytics = "UA-123-45"
-# disqusShortname = "yourdiscussshortname"
-
-[author]
-  name = "Caleb Callaway"
-
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  # Categories are disabled by default.
+baseurl       = "/"
+title         = "Brain Vitamins"
+languageCode  = "en-us"
+theme         = "hello-friend-ng"
+paginate      = -1
+enableGitInfo = true
 
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  dateformNumTime = "2006-01-02 15:04"
+  gitUrl = "https://www.github.com/cqcallaw/www/commit/"
+
+  # Subtitle for home
+  homeSubtitle = "food for thought"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = true
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = false
 
   # Metadata mostly used in document's head
-  # description = ""
-  # images = [""]
-  themeColor = "#494f5c"
+  description = "Caleb Callaway's personal site"
+  keywords = "homepage, blog"
+  images = [""]
 
-  homeSubtitle = "Food for thought"
-  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  # bgImg = ""  # Homepage background-image URL
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  gitUrl = "https://github.com/cqcallaw/www/commit/"
+  footerRight = "Made with &#10084;"
 
-  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = false  # Set "text-align: justify" to `.content`.
-
-  relatedPosts = false  # Add a related content section to all single posts page
-
-  code_copy_button = true # Turn on/off the code-copy-button for code-fields
-
-  # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
-
-  # Social Icons
-  # Check https://github.com/Track3/hermit#social-icons for more info.
   [[params.social]]
     name = "twitter"
     url = "https://twitter.com/cqcallaw"
@@ -68,19 +43,43 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "linkedin"
     url = "https://linkedin.com/in/cqcallaw"
 
-[menu]
+[taxonomies]
+  tag      = "tags"
 
+[languages]
+  [languages.en]
+    title = "Brain Vitamins"
+    subtitle = "food for thought"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      # logoText     = "home"
+      path = "/images/home.svg"
+      logoHomeLink = "/"
+      # Set true to remove the logo cursor entirely.
+      logoCursorDisabled = true
+      # Set to a valid CSS color to change the cursor in the logo.
+      # logoCursorColor    = "#67a2c9"
+      # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+      # logoCursorAnimate  = "2s"
+
+  # And you can even create generic menu
   [[menu.main]]
-    name = "Blog"
-    url = "blog/"
+    identifier = "blog"
+    name       = "blog"
+    url        = "/blog"
     weight = 10
 
   [[menu.main]]
-    name = "Resume"
-    url = "resume.pdf"
-    weight = 20
+    identifier = "resume"
+    name = "resume"
+    url = "/resume.pdf"
+    weight = 30
 
   [[menu.main]]
-    name = "About"
-    url = "about/"
+    identifier = "about"
+    name = "about"
+    url = "/about"
     weight = 40
