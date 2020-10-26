@@ -7,7 +7,7 @@ public: $(FILES) static/resume.pdf
 	touch public
 	ipfs add -r public
 
-preview:
+preview: public
 	$(eval CID = $(shell ipfs add --quiet -r public | tee ipfs.log | tail -n 1))
 	@echo Preview Link: http://dweb.link/ipfs/$(CID)
 
