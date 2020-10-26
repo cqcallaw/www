@@ -29,7 +29,7 @@ enableGitInfo = true
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
-  footerRight = "Made with &#10084;"
+  footerRight = "Theme <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
 
   [[params.social]]
     name = "twitter"
