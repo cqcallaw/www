@@ -1,7 +1,10 @@
 FILES := config.toml $(shell find archetypes content layouts static themes)
 
 public: $(FILES) static/resume.pdf
-	hugo --noTimes
+# disable hugo modification times; a large binary static file makes the timestamp sync logic go haywire
+	hugo --noTimes --destination public
+# manually touch the output folder so its mod time is correct
+	touch public
 	ipfs add -r public
 
 static/resume.pdf: static/resume.tex
@@ -9,3 +12,6 @@ static/resume.pdf: static/resume.tex
 
 clean:
 	rm -rf static/resume.pdf public
+
+# ref: https://stackoverflow.com/a/27770136/577298
+.NOTPARALLEL:
