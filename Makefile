@@ -6,17 +6,10 @@ static/resume.pdf: static/resume.tex
 	cd static && pdflatex -aux-directory=/dev/null resume.tex && rm -f resume.aux resume.log
 
 cweb: $(FILES)
-	hugo -d cweb
-	# correct modification time;
-	# for some reason Hugo output sets the modification time to Dec 13 1901
-	find cweb -exec touch {} +
+	hugo -d --noTimes cweb
 
 dweb: $(FILES)
-	hugo -d dweb --baseURL '/'
-	# correct modification time;
-	# for some reason Hugo output sets the modification time to Dec 13 1901
-	find dweb -exec touch {} +
-	ipfs add -r dweb
+	hugo -d dweb --noTimes --baseURL '/'
 
 clean:
 	rm -rf static/resume.pdf public cweb dweb
