@@ -27,7 +27,7 @@ enableGitInfo = true
   images = [""]
 
   # Default theme "light" or "dark"
-  defaultTheme = "dark"
+  defaultTheme = "light"
 
   customCss = ["/css/custom.css"]
 
