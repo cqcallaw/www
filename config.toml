@@ -27,7 +27,7 @@ enableGitInfo = true
   images = [""]
 
   # Default theme "light" or "dark"
-  defaultTheme = "dark"
+  defaultTheme = "light"
 
   footerRight = "Theme <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
 
