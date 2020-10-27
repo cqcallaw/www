@@ -45,3 +45,8 @@ a svg {
 .tag a:link {
 	text-decoration: none;
 }
+
+.content img {
+	margin-left: auto;
+	margin-right: auto;
+}
