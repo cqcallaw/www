@@ -1,0 +1,47 @@
+a {
+	color: #267F99;
+}
+
+a:hover {
+	color: #FF0000;
+}
+
+a:visited {
+	color: #FF0000;
+}
+
+/* reset color for icon links */
+a svg {
+	color: #222;
+}
+
+/* reset color for menu links */
+.menu a {
+	color: #222;
+}
+
+.dark-theme a {
+	color: #9CDCFE;
+}
+
+.dark-theme a:hover {
+	color: #4EC9B0;
+}
+
+.dark-theme a:visited {
+	color: #4EC9B0;
+}
+
+/* reset color for icon links */
+.dark-theme a svg {
+	color: #a9a9b3;
+}
+
+/* reset color for menu links */
+.dark-theme .menu a {
+	color: #a9a9b3;
+}
+
+.tag a:link {
+	text-decoration: none;
+}

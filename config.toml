@@ -27,9 +27,11 @@ enableGitInfo = true
   images = [""]
 
   # Default theme "light" or "dark"
-  defaultTheme = "light"
+  defaultTheme = "dark"
 
-  footerRight = "Theme <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
+  customCss = ["/css/custom.css"]
+
+  footerRight = "Theme: modified <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
 
   [[params.social]]
     name = "twitter"
