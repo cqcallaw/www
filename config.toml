@@ -49,21 +49,10 @@ enableGitInfo = true
 [languages]
   [languages.en]
     title = "Brain Vitamins"
-    subtitle = "food for thought"
+    # subtitle = "food for thought"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      # logoText     = "home"
-      path = "/images/home.svg"
-      logoHomeLink = "/"
-      # Set true to remove the logo cursor entirely.
-      logoCursorDisabled = true
-      # Set to a valid CSS color to change the cursor in the logo.
-      # logoCursorColor    = "#67a2c9"
-      # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-      # logoCursorAnimate  = "2s"
 
   # And you can even create generic menu
   [[menu.main]]
