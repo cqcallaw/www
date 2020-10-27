@@ -20,18 +20,6 @@ a svg {
 	color: #222;
 }
 
-.posts-list a {
-	color: #222;
-}
-
-.posts-list a:hover {
-	color: #FF0000;
-}
-
-.posts-list a:visited {
-	color: #FF0000;
-}
-
 .dark-theme a {
 	color: #9CDCFE;
 }
