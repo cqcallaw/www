@@ -1,13 +1,13 @@
 a {
-	color: #267F99;
+	color: darkmagenta;
 }
 
 a:hover {
-	color: #FF0000;
+	color: #267F99;
 }
 
 a:visited {
-	color: #FF0000;
+	color: #267F99;
 }
 
 /* reset color for icon links */
