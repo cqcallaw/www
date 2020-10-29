@@ -1,7 +1,7 @@
-<a href="{{ if .Site.Params.Logo.LogoHomeLink }}{{ .Site.Params.Logo.LogoHomeLink }}{{else}}{{ .Site.BaseURL | relLangURL }}{{ end }}" style="text-decoration: none;">
-    <div class="logo">
+<div class="logo">
+    <a href="{{ if .Site.Params.Logo.LogoHomeLink }}{{ .Site.Params.Logo.LogoHomeLink }}{{else}}{{ .Site.BaseURL | relLangURL }}{{ end }}">
         <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-dasharray="none" fill="currentColor" stroke="currentColor">
             <path d="m 0.75,12.0 11.25,-9.0 4.5,3.375 0.0,-1.5 2.25,0.0 0.0,3.375 4.5,3.75 -2.25,0.0 0.0,9.0 -5.625,0.0 0.0,-7.5 -6.75,0.0 0.0,7.5 -5.625,0.0 0.0,-9.0 z" />
         </svg>
-    </div>
-</a>
+    </a>
+</div>

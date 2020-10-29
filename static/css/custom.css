@@ -50,3 +50,7 @@ a svg {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.logo a {
+	text-decoration: none;
+}
