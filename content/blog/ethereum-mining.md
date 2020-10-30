@@ -53,7 +53,7 @@ ethminer occasionally loses its connection to the mining pool and then terminate
 $ mkdir -p ~/.config/systemd/user/
 
 # edit ~/.config/systemd/user/ethminer.service so it contains the following contents:
-$ cat ~/.config/systemd/user/ethminer.service 
+$ cat ~/.config/systemd/user/ethminer.service
 Unit]
 Description=Ethminer Ethereum Miner Daemon
 
@@ -77,6 +77,4 @@ More details about systemd user services can be found [on the Arch wiki](https:/
 
 * https://ethereum.org/learn/
 * https://unblock.net/cryptocurrency-consensus-algorithms/
-
-_If you enjoyed this intro and would like to support the blog, please feel free to tip me at Ethereum address 0xf7318Ac0253B14f703D969483fF2908b42b261cc_
 

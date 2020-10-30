@@ -37,6 +37,11 @@
 
       <div class="post-content">
         {{ .Content }}
+        {{ range $tag := .Params.tags }}
+          {{ if eq $tag "dweb" }}
+            <p class="donate"><em>If you enjoyed this post and would like to support more of the same, contribute ETH to 0xf7318Ac0253B14f703D969483fF2908b42b261cc.</em></p>
+          {{ end }}
+        {{ end }}
       </div>
     </article>
 

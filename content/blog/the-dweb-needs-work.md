@@ -52,6 +52,3 @@ Folks clamoring for an edit button on Twitter will have a bad time on the Dweb a
 The technical hurdles described above would include solutions if I was clever enough to have solved them. The difficulty of maintaining robust peer-to-peer routes is a particularly thorny problem with [old solutions](https://en.wikipedia.org/wiki/STUN). A hybrid solution may be necessary. I'm most encouraged by the work done to establish Dweb authenticity, though the work I've seen depends on the Ethereum block-chain and is therefore limited by Ethereum gas prices. All eyes on the Ethereum community to get that one under control.
 
 I also wonder if the content distribution mechanisms developed for a centralized web are simply unsuitable for the Dweb; maybe we're better served by new models that "lean in" to the Dweb's stateless eventual propagation. Maybe Martians will remember weblogs as historical curiosities.
-
-_If you enjoyed this post and would like to support the blog, please feel free to tip me at Ethereum address 0xf7318Ac0253B14f703D969483fF2908b42b261cc_
-
