@@ -1,18 +1,12 @@
 FILES := config.toml $(shell find archetypes content layouts static themes)
 
-preview: draft
-	$(eval CID = $(shell ipfs add --quiet -r draft | tee ipfs.log | tail -n 1))
-	@echo Preview Link: http://dweb.link/ipfs/$(CID)
-
-draft: $(FILES) static/resume.pdf
-# disable hugo modification times; a large binary static file makes the timestamp sync logic go haywire
-	hugo -D --debug --noTimes --destination draft
-# manually touch the output folder so its mod time is correct
-	touch draft
+preview:
+	hugo -D --debug server --baseUrl "http://localhost/"
 
 publish: public
 	$(eval CID = $(shell ipfs add --quiet -r public | tee ipfs.log | tail -n 1))
 	ipfs pin add $(CID)
+	@echo Preview Link: http://dweb.link/ipfs/$(CID)
 
 public: $(FILES) static/resume.pdf
 # disable hugo modification times; a large binary static file makes the timestamp sync logic go haywire
