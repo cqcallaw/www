@@ -13,6 +13,8 @@ public: $(FILES) static/resume.pdf
 	hugo --noTimes --destination public
 # manually touch the output folder so its mod time is correct
 	touch public
+# tidy up auto-generated HTML
+	find public -name *.html -exec tidy -quiet -i -w 120 -m {} \;
 
 static/resume.pdf: static/resume.tex
 	cd static && pdflatex -aux-directory=/dev/null resume.tex && rm -f resume.aux resume.log
