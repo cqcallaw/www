@@ -1,4 +1,4 @@
-FILES := config.toml $(shell find archetypes content layouts static themes)
+FILES := config.toml $(shell find archetypes assets content layouts static themes)
 
 preview:
 	hugo -D --debug server --baseUrl "http://localhost/"
