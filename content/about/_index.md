@@ -1,7 +1,7 @@
 +++
 author = "Caleb Callaway"
 date = 2016-01-29T12:35:25Z
-description = ""
+summary = "About Brain Vitamins"
 draft = false
 slug = "about"
 title = "About"

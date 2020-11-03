@@ -22,8 +22,8 @@ enableGitInfo = true
   enableSharingButtons = false
 
   # Metadata mostly used in document's head
-  description = "Caleb Callaway's personal site"
-  keywords = "homepage, blog"
+  description = "food for thought"
+  keywords = "homepage, blog, tech, philosophy"
   images = [""]
 
   # Default theme "light" or "dark"
