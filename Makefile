@@ -17,7 +17,7 @@ ipfs: git-publish
 
 git-publish: public
 # make sure we're on the master branch
-	git checkout master
+	git branch --show-current | grep 'master'
 # make sure remote master is up-to-date
 	git push origin master
 
