@@ -3,7 +3,7 @@ FILES := config.toml $(shell find archetypes assets content layouts static theme
 preview:
 	hugo -D --debug server --baseUrl "http://localhost/"
 
-publish: www-update ipfs
+publish: clean www-update ipfs
 
 www-update: git-publish
 # update conventional web view
