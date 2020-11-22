@@ -16,8 +16,7 @@ ipfs: clean git-publish sign
 	@echo Preview Link: http://dweb.link/ipfs/$(CID)
 
 sign: clean public
-# GPG sign (this is slow)
-	find public -type f -printf "Signing %p...\n" -exec gpg --quiet --batch --yes --detach-sig {} \;
+	./sign.py public
 
 git-publish: public
 # make sure we're on the master branch
