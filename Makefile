@@ -15,7 +15,7 @@ ipfs: clean git-publish sign
 	ipfs pin add $(CID)
 	@echo Preview Link: http://dweb.link/ipfs/$(CID)
 
-sign: clean public
+sign: public
 	./sign.py public
 
 git-publish: public
