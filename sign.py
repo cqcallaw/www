@@ -37,7 +37,7 @@ def create_worker_dirs(working_dir: str, pool_size: int):
         dest = os.path.join(working_dir, "ForkPoolWorker-" + str(i))
         print("Generating worker dir", dest)
         os.makedirs(dest, exist_ok=True)
-        for f in ['pubring.gpg', 'trustdb.gpg']:
+        for f in ['pubring.gpg', 'trustdb.gpg', 'gpg.conf', 'gpa.conf']:
             shutil.copyfile(
                 os.path.join(pg_src, f),
                 os.path.join(dest, f)
