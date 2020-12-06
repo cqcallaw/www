@@ -1,8 +1,9 @@
 ---
 title: "Cryptpad"
-date: 2020-12-57T18:48:13-08:00
+date: 2020-12-05T18:42:03-08:00
 draft: false
 summary: "Hosting instructions for Cryptpad, a zero knowledge realtime collaborative editor"
+tags: ["howto", "foss", "security"]
 ---
 
 In 2020, Google and I broke up. [DuckDuckGo](https://duckduckgo.com/) has long been my search engine of choice, but this year I replaced Gmail with [ProtonMail](https://protonmail.com/), Google Music died, and I found [Cryptpad](https://cryptpad.fr/), a "Zero Knowledge realtime collaborative editor" which provides everything I need from Google Docs (except [a backup strategy](https://www.redhat.com/sysadmin/world-backup-day)). With this [free, open-source software]((https://github.com/xwiki-labs/cryptpad)) deployed, I can log current events without fear of surveillance.
