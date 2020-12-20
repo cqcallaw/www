@@ -21,4 +21,4 @@ Serially signing many files with GnuPG is not fast, but modern CPUs have many th
 
 Armed with this knowledge, I wrote [a Python script](https://github.com/cqcallaw/www/blob/94f0dbb84fa3908acdd698d7b67071bf4f2a723b/sign.py) that generates good PGP signatures across every file on the website while fully utilizing all 16 of my CPU's threads. The result can be seen on [brainvitamins.eth](http://www.brainvitamins.eth). For any given file, a corresponding `.sig` file should exist that can be verified using [my public key](/pubkey.asc).
 
-Next step: building a browser extension to automatically verify signatures and trust pubkeys as required.
+Next step: [building a browser extension to automatically verify signatures and trust pubkeys as required](/blog/qui).
