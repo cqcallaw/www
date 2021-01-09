@@ -66,12 +66,6 @@ enableGitInfo = true
     weight = 10
 
   [[menu.main]]
-    identifier = "resume"
-    name = "resume"
-    url = "/resume.pdf"
-    weight = 30
-
-  [[menu.main]]
     identifier = "about"
     name = "about"
     url = "/about"
