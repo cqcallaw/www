@@ -36,7 +36,7 @@ static/resume.pdf: static/resume.tex
 	cd static && pdflatex -aux-directory=/dev/null resume.tex && rm -f resume.aux resume.log
 
 clean:
-	rm -rf static/resume.pdf public resources/_gen
+	rm -rf static/resume.pdf public resources/_gen gnupg-tmp
 
 # ref: https://stackoverflow.com/a/27770136/577298
 .NOTPARALLEL:
