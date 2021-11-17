@@ -14,7 +14,7 @@ For me, cinnamon raisin oatmeal is the addition of cinnamon, sugar, and raisins 
 
 The details of the recipe will depend on the type of oats used, but I've had good success with the following:
 
-1. 1/2 water
+1. 1/2 cup water
 2. 2 tablespoons [cinnamon sugar](https://www.thespruceeats.com/how-to-make-cinnamon-sugar-3060767)
 3. 1/4 cup [Bob's Red Mill Quick Cooking Steel Cut Oats](https://www.bobsredmill.com/quick-cooking-steel-cut-oats.html)
 4. 1 tablespoon flaxseed
