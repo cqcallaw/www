@@ -13,6 +13,7 @@ ipfs: git-publish sign
 # publish to IPFS
 	$(eval CID = $(shell ipfs add --quiet -r public | tee ipfs.log | tail -n 1))
 	ipfs pin add $(CID)
+	ssh www.brainvitamins.net 'ipfs pin add $(CID)'
 	@echo Preview Link: http://dweb.link/ipfs/$(CID)
 
 sign: public
