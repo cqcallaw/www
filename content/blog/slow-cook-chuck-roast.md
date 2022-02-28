@@ -21,4 +21,4 @@ Optional Ingredients:
 
 It's okay to use cheap meat and wine, though I've heard it said that one should never cook with wine that one wouldn't drink. It is good to buy meat that was raised and slaughtered humanely if one can afford to do so.
 
-Preheat the oven to 350° F (175° C). Place the chuck steak in a study, oven-safe pan and fill the pan with wine. The wine need not cover the meat. Add bay leaf and any optional ingredients. Place in oven. Remove from the oven when the wine has completely evaporated, which usually takes 4-6 hours. Grease from the meat will remain even after the wine has cooked off. Turning the meat over after 3 hours helps distribute secondary flavors evenly.
+Preheat the oven to 350° F (175° C). Place the chuck steak in a study, oven-safe pan and fill the pan with wine. The wine need not cover the meat. Add bay leaf and any optional ingredients. Place in oven. Remove from the oven when the wine has completely evaporated, which usually takes 3-6 hours, depending on size. Grease from the meat will remain even after the wine has cooked off. Turning the meat over after 3 hours helps distribute secondary flavors evenly.
