@@ -9,15 +9,15 @@ www-update: git-publish
 # update conventional web view
 	ssh www.brainvitamins.net 'cd ~/src/www/ && git pull origin master && make clean public && chmod -R 0755 public && rsync -arh --delete ~/src/www/public/ /var/www/html/'
 
-ipfs: git-publish sign
+ipfs: git-publish # sign
 # publish to IPFS
 	$(eval CID = $(shell ipfs add --quiet -r public | tee ipfs.log | tail -n 1))
 	ipfs pin add $(CID)
 	ssh www.brainvitamins.net 'ipfs pin add $(CID)'
 	@echo Preview Link: http://dweb.link/ipfs/$(CID)
 
-sign: public
-	./sign.py public
+# sign: public
+# 	./sign.py public
 
 git-publish: public
 # make sure we're on the master branch
