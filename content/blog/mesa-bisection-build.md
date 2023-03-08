@@ -1,7 +1,7 @@
 ---
 title: "Building Mesa for Driver Bisection"
 date: 2023-03-07T16:16:09-08:00
-draft: true
+draft: false
 author: "Caleb Callaway"
 tags: ["tech", "linux", "gaming"]
 ---
