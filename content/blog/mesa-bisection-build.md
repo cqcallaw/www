@@ -12,7 +12,7 @@ For recent Ubuntu releases:
 
 ```bash
 # install dependencies
-sudo apt build-dep mesa
+sudo apt build-dep -y mesa
 # create source directory
 mkdir -p ~/src && cd ~/src
 # checkout source
@@ -35,6 +35,7 @@ Add the following lines to `/etc/environment`:
 # The Steam UI and some game launchers require 32-bit libraries,
 # so we include the 32-bit system library path.
 LIBGL_DRIVERS_PATH=/usr/local/lib/x86_64-linux-gnu/dri:/usr/lib/x86_64-linux-gnu/dri
+LD_LIBRARY_PATH=/usr/local/lib/x86_64-linux-gnu/:$LD_LIBRARY_PATH
 
 # Override Vulkan ICD path.
 # Here Intel is used; replace with other vendor ICDs as needed.
