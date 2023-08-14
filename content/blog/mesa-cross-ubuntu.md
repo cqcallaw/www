@@ -6,7 +6,7 @@ author: "Caleb Callaway"
 tags: ["tech", "linux", "gaming"]
 ---
 
-Bisecting Mesa on Ubuntu isn't as straight-forward as my previous [post]({{< ref "/blog/mesa-bisection-build" >}}) might suggest. Most modern workloads use 64-bit binaries, but Steam [still requires 32-bit libraries](https://steamcommunity.com/app/221410/discussions/0/3267935171633666595/) and game managers like Uplay frequently carry similar requirements. As I re-discovered while bisecting an [Unreal Editor regression](https://gitlab.freedesktop.org/mesa/mesa/-/issues/9523), deploying different builds of Mesa for 64- and 32-bit often leads to workload instability.
+Bisecting Mesa on Ubuntu isn't as straight-forward as my previous [post]({{< ref "/blog/mesa-bisection-build" >}}) might suggest. Most modern workloads use 64-bit binaries, but Steam [still requires 32-bit libraries](https://steamcommunity.com/app/221410/discussions/0/3267935171633666595/) and game managers like Uplay frequently carry similar requirements. Deploying different builds of Mesa for 64- and 32-bit often leads to workload instability.
 
 Cross-compilng Mesa on Ubuntu is a bit fraught, however. Until recently, one needed to install the 32-bit valgrind package to build 32-bit Mesa, which forced the 64-bit valgrind package to be uninstalled. As of this writing, Mesa requires LLVM 15, and installing the 32bit version of LLVM 15 on Ubuntu 22.04 will remove key packages like `ubuntu-desktop` and `xorg`. If in ignorance one uses apt's `-y` option, sadness ensues.
 
@@ -25,7 +25,7 @@ SRC_DIR=$HOME/src/mesa
 CODENAME=$(lsb_release --codename --short)
 # make sure source is available
 if [ ! -d "$SRC_DIR" ]; then
-	mkdir -p $SRC_DIR
+    mkdir -p $SRC_DIR
 fi
 
 set +e # allow errors temporarily
@@ -33,11 +33,11 @@ git -C $SRC_DIR rev-parse 2>/dev/null
 exit_code=$(echo $?)
 set -e
 if [ "$exit_code" -ne 0 ] ; then
-	echo "Cloning source..."
-	# checkout source
-	git clone https://gitlab.freedesktop.org/mesa/mesa.git $SRC_DIR
+    echo "Cloning source..."
+    # checkout source
+    git clone https://gitlab.freedesktop.org/mesa/mesa.git $SRC_DIR
 else
-	echo "Source already cloned."
+    echo "Source already cloned."
 fi
 
 # configure execution-wide state
@@ -95,6 +95,7 @@ EOF
 	sudo schroot -c $2 -- sh -c "update-alternatives --install /usr/bin/llvm-config llvm-config /usr/lib/llvm-15/bin/llvm-config 200"
 
 	# do the build
+	cd $SRC_DIR
 	BUILD_DIR=build-$BUILD_ID/$1
 	mkdir -p $BUILD_DIR
 	sudo schroot -c $2 -- sh -c "meson setup $BUILD_DIR $BUILD_OPTS --prefix=$INSTALL_DIR"
@@ -102,7 +103,12 @@ EOF
 	sudo schroot -c $2 -- sh -c "ninja -C $BUILD_DIR install"
 
 	# deploy
-	sudo cp -vr "${SCHROOT_PATH}${INSTALL_DIR}" "$INSTALL_DIR"
+	sudo cp -Tvr "${SCHROOT_PATH}${INSTALL_DIR}" "$INSTALL_DIR"
+}
+
+build_mesa "amd64" "${CODENAME}64" "linux"
+build_mesa "i386" "${CODENAME}32" "linux32"
+
 }
 
 build_mesa "amd64" "${CODENAME}64" "linux"
