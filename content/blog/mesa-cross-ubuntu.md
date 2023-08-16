@@ -108,11 +108,6 @@ EOF
 
 build_mesa "amd64" "${CODENAME}64" "linux"
 build_mesa "i386" "${CODENAME}32" "linux32"
-
-}
-
-build_mesa "amd64" "${CODENAME}64" "linux"
-build_mesa "i386" "${CODENAME}32" "linux32"
 ```
 
 As before, environment overrides are required for system components to use the new build. Both 64-bit and 32-bit overrides are necessary.
