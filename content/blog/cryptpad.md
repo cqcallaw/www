@@ -6,7 +6,7 @@ summary: "Hosting instructions for Cryptpad, a zero knowledge realtime collabora
 tags: ["howto", "foss", "security"]
 ---
 
-In 2020, Google and I broke up. [DuckDuckGo](https://duckduckgo.com/) has long been my search engine of choice, but this year I replaced Gmail with [ProtonMail](https://protonmail.com/), Google Music died, and I found [Cryptpad](https://cryptpad.fr/), a "Zero Knowledge realtime collaborative editor" which provides everything I need from Google Docs (except [a backup strategy](https://www.redhat.com/sysadmin/world-backup-day)). With this [free, open-source software]((https://github.com/xwiki-labs/cryptpad)) deployed, I can log current events without fear of surveillance.
+In 2020, Google and I broke up. [DuckDuckGo](https://duckduckgo.com/) has long been my search engine of choice, but this year I replaced Gmail with [ProtonMail](https://protonmail.com/), Google Music died, and I found [Cryptpad](https://cryptpad.fr/), a "Zero Knowledge realtime collaborative editor" which provides everything I need from Google Docs (except [a backup strategy](https://www.redhat.com/sysadmin/world-backup-day)). With this [free, open-source software](https://github.com/xwiki-labs/cryptpad) deployed, I can log current events without fear of surveillance.
 
 Though the project does not officially support Apache, nginx lacks features I require, so I still took the road less traveled. [A sample Apache proxy config](https://github.com/xwiki-labs/cryptpad/issues/62#issuecomment-270236705) was simple to find; I was particularly grateful for the hot tip regarding WebSocket traffic:
 

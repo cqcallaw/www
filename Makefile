@@ -1,7 +1,7 @@
 FILES := config.toml $(shell find archetypes assets content layouts static themes)
 
 preview:
-	hugo -D --debug server --baseUrl "http://localhost/"
+	hugo -D --debug server --baseURL "http://localhost/"
 
 publish: www-update ipfs
 
