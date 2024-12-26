@@ -32,10 +32,6 @@ enableGitInfo = true
   footerRight = "Theme: modified <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
 
   [[params.social]]
-    name = "mastodon"
-    url = "https://mastodon.xyz/@cqcallaw"
-
-  [[params.social]]
     name = "twitter"
     url = "https://twitter.com/cqcallaw"
 
@@ -47,6 +43,10 @@ enableGitInfo = true
     name = "linkedin"
     url = "https://linkedin.com/in/cqcallaw"
 
+  [[params.social]]
+    name = "mastodon"
+    url = "https://mastodon.xyz/@cqcallaw"
+
 [taxonomies]
   tag      = "tags"
 
@@ -57,6 +57,7 @@ enableGitInfo = true
     keywords = "homepage, blog, tech, philosophy"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
+    disableKinds = []
 
   # And you can even create generic menu
   [[menu.main]]
