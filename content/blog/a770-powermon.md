@@ -5,6 +5,8 @@ date: 2024-12-12T16:30:54-08:00
 draft: false
 ---
 
+**Update**: just use [qmassa](https://github.com/ulissesf/qmassa) instead.
+
 I was unable to dump power usage for my Intel Alchemist card using standard tools (lm-sensors, powerstat), but a bit of Python does the trick:
 
 ```
