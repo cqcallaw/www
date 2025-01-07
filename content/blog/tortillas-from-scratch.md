@@ -10,7 +10,7 @@ title = "Tortillas from Scratch"
 +++
 
 
-[No amount of money can buy you a better Coke](https://kottke.org/10/10/andy-warhol-on-coca-cola), but I'm convinced the best corn tortillas are fresh off the griddle at home. Two ingredients ([masa harina](https://recipes.howstuffworks.com/what-is-masa-harina.htm) and water), 1 minute cook time, and I am quite addicted.
+[No amount of money can buy you a better Coke](https://kottke.org/10/10/andy-warhol-on-coca-cola), but I'm convinced the best corn tortillas are fresh off the griddle at home. Two ingredients ([masa harina](https://recipes.howstuffworks.com/what-is-masa-harina.htm) and water), 1 minute cook time, and I am quite addicted. I find a masa-to-water ratio of .75:1 by weight is ideal, e.g. 75g of masa and 100g of water.
 
 Fresh tortillas are delicious plain or spread with butter. Sprinkle cinnamon sugar on top of the butter for a sweet snack; cheese melted and mixed with refried beans makes a heartier filling.
 
