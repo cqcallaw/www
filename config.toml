@@ -2,7 +2,6 @@ baseurl       = "/"
 title         = "Brain Vitamins"
 languageCode  = "en-us"
 theme         = "hello-friend-ng"
-paginate      = -1
 enableGitInfo = true
 
 [params]
