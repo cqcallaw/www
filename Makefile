@@ -34,7 +34,7 @@ public: $(FILES) static/resume.pdf
 	find public -name *.html -exec tidy --tidy-mark no -quiet -i -w 120 -m {} \;
 
 static/resume.pdf: static/resume.tex
-	cd static && pdflatex -aux-directory=/dev/null resume.tex && rm -f resume.aux resume.log
+	cd static && pdflatex -halt-on-error resume.tex && rm -f resume.aux resume.log
 
 clean:
 	rm -rf static/resume.pdf public resources/_gen gnupg-tmp
