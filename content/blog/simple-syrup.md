@@ -28,4 +28,9 @@ Strain the bean and cinnamon sticks from the mixture; the vanilla seeds may be l
 
 ## Honey Vanilla Cinnamon Simple Syrup
 
-Substitute honey for sugar in the recipe above. All proportions remain the same.
+Substitute honey for sugar in the recipe above. Honey is very sticky, so it is convenient to measure by weight:
+
+* 16 oz. water
+* 16 oz. honey
+* 1 dried vanilla bean
+* 8 cinnamon sticks
