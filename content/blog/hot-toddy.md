@@ -3,6 +3,7 @@ title: "Hot Toddy"
 date: 2026-11-22T14:31:06-08:00
 draft: false
 author: "Caleb Callaway"
+tags: ["cooking"]
 ---
 
 A classic cold-weather drink. Pairs nicely with comfortable slippers and a crackling fire on a winter evening.
